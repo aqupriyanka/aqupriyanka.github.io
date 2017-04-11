@@ -1,0 +1,36 @@
+
+*{
+	margin: 0;
+	padding: 0;
+		
+}
+
+.header{
+	background-color: white;
+	border:1px outset #cccccc;
+	height: 100px;
+	overflow: hidden;
+	text-align: center; 
+	line-height: 100px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.nameHeader{
+	background-color: #4aaaa5;
+	margin: 0 0px 0 100px;
+	color: white;
+	display: block;
+	width: 20%;
+	height: 100%;
+	overflow: hidden;	
+	float: left;
+}
+
+li.listHeader{
+	float: left; 
+	padding: 0px 25px 0 10px;
+	
+	color: #777777;
+	list-style-type: none;
+	font-size: 18px;
+}
