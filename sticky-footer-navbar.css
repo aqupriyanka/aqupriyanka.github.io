@@ -1,0 +1,120 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-image: url(img/ep_naturalwhite.png);
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: darkgrey;
+  border-top:2px solid #4aaaa5
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+h2{
+  font-family: "Times";
+  font-size: 27px;
+  font-weight: bold;
+  color: #4aaaa5;
+}
+.nav-color{
+  background: white;
+}
+
+@keyframes slideInFromLeft {
+          0%{
+          transform: translateX(-100%);
+          }
+         /*100%{
+          transform: translateX(0);
+        }*/
+    }
+
+
+a.headername:hover{
+  transform: rotate(360deg);
+}
+
+.headername{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-transition: -webkit-transform 2s; /* Safari */
+    transition: transform 2s;
+  background-color: #4aaaa5;
+  color: white;
+  padding: 40px 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.headername:hover {
+  color: white;
+   background-color: #4aaaa5  ;
+  }
+.navbar-menu{
+  padding-top: 20px;
+  font-size: 16px;
+}
+.grid-col-decoration{
+  margin-top: 80px; border:1px solid #ccc;padding: 20px;background: white;
+}
+#intro{
+  font-size: 17px;color: #4aaaa5;padding: 20px
+}
+.image{
+        position: relative;
+        width: 100%;
+        display: inline;
+      }
+    .image h2{
+      position: absolute;
+      bottom: 25px;
+      margin:20px;
+      left: .1px;
+      background: #4aaaa5;
+      color: white;
+      width: 85%;
+      text-align: center;
+      font-size: 25px;
+      font-weight: normal;
+      font-family: "Arial";
+    }
+    .image img{
+      margin: 30px 20px;
+      margin-right: 20px;
+      vertical-align: baseline;
+}
+textarea{
+  height: 400px;
+  width: 410px;
+  border-radius: 3px;
+  border: 2px inset;
+  size: 200px;
+}

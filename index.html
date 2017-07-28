@@ -1,28 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Portfolio Page</title>
-	<link rel="stylesheet" type="text/css" href="css\reset.css">
-	<link rel="stylesheet" type="text/css" href="header.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+	<style type="text/css">
+		.stickHeader{
+			position: relative;
+		  width: 100%;
+		  text-align: center;
+		  font-size: 25px;
+		  line-height: 108px;
+		  height: 108px;
+		  background: #335C7D;
+		  color: black;
+		  font-family: 'PT Sans', sans-serif;
+
+		}
+		.sticky {
+		  font-size: 16px;
+		  line-height: 20px;
+		  height: 20px;
+		  /*background: #efc47D;*/
+		  opacity: 0.8;
+		  text-align: center;
+		  padding: 20px;
+		  transition: all 0.4s ease;
+		  position: fixed;
+		  top: 0;
+		}
+		.jumbotron{
+			height: 300px;
+			background-color: #00a5bb;
+		}
+		header{
+		  position: relative;
+		  width: 100%;
+		  text-align: center;
+		  font-size: 25px;
+		  line-height: 108px;
+		  height: 108px;
+		  background: #335C7D;
+		  color: black;
+		  font-family: 'PT Sans', sans-serif;
+
+		}
+		.socialHeader{
+			border:2px solid rgba(255, 255, 255, 0.8);
+			border-radius: 50%;
+			width: 32px;
+			height: 32px;
+			color:rgba(255, 255, 255, 0.8);
+		}
+		a{
+			text-decoration:none;
+			color: white;
+		}
+		a:link, a:visited, a:active,a:hover{
+			text-decoration:none;
+			color: white;
+		}
+	</style>	
 </head>
 <body>
 
-<div class="header">
+		<header>
+			 <div class="" style="float: left">
+			 	<ul style="list-style-type: none" class="">
+			 		<li style="float:left;padding: 0 10px;">
+			 		<a href="#"><i class="fa fa-linkedin socialHeader" ></i></a>
+			 		</li>
+			 		<li style="float:left;padding: 0 10px;">
+			 		<a href="#"><i class="fa fa-github socialHeader" ></i></a>
+			 		</li>
+			 		<li style="float:left;padding: 0 10px;">
+			 		<a href="#"><i class="fa fa-envelope-o socialHeader" ></i></a>
+			 		</li>
+			 		<li style="float:left;padding: 0 10px;">
+			 		<a href="#"><i class="fa fa-stack-overflow socialHeader" ></i></a>
+			 		</li>
+			 	
+			 </div>
 
-<h2 class="nameHeader">PRIYANKA ARORA</h2>
+			 <div class="" style="float: right">
+			 	<button class="btn btn-info"><a href="Priyanka_Resume.doc" download>
+			 	Download My Resume</a></button>
+			 </div>
+				
+		</header> 
+	
+			
+			<div class="" style="background-color:#00a5bb ;margin: auto;padding: auto;text-align: center;" id="intoId">
+				<br>
+				<br>
+				<img src="img/priPic3.jpg" width="200" height="200" id="profileImage" alt="" style="padding: 20px;border-radius: 100%;border-width: 3px; border-color: white">
+				<br>
 
-<nav>
-	<ul style="list-style-type: none;float: right;width:40%;background:white;"> 
-		<li class="listHeader">About</li>
-		<li class="listHeader">|</li>
-		<li class="listHeader">Portfolio</li>
-		<li class="listHeader">|</li>
-		<li class="listHeader">Contact</li>
-	</ul>
-</nav>
+				<br>
+				<h2>Priyanka Arora</h2>
 
-</div>
-<div style="clear: both;"></div>
 
+			<div style="text-align: center; background-color: #00ACD4;padding-top: 2px;">
+				
+				<h3>Full Stack Developer</h3>
+				<br>
+				<div class="container">
+					<p id="intro" class="text-justify">
+					I am a full stack software developer who has experience in building web and enterprise applications using <b>WCS,JSF, 	JSP, Servlets, EJB,  Struts, Spring, and Hibernate</b>. I have almost 9 years of experience in this field. I have worked on SOA Architecture 		using <b>Web Services, AXIS, WSDL, SOAP, and JAX-WS
+					</b>
+					Experienced Strategic Business Database designing with <b>Oracle, DB2, MySQL, SQL Server and Postgres</b>
+					I have excellent analytical skills with Expertise in bug fixing and analyzing the root cause.
+					</p>
+				</div>
+				<br>
+			</div>	
+				
+				<div class="stickHeader text-center" style="margin: auto;">
+					<ul style="list-style-type: none;text-align: center; margin-left: 25%;">
+						<li style="float: left;padding: 0 20px;"><a href="#eduContainer">Education</a></li>
+						<li style="float: left;padding: 0 20px;"><a href="#expContainer">Experience</a></li>
+						<li style="float: left;padding: 0 20px;"><a href="#skillsContainer">Skills</a></li>
+						<li style="float: left;padding: 0 20px;"><a href="#contactContainer">Contact</a></li>
+						
+					</ul>
+				</div>
+		
+	</div>
+			<!-- </div> -->
+			
+
+	<br>
+	<!-- <div style="margin: 0;"> -->
+	
+
+		
+	<br>
+	
+	<div>	
+		<section id="eduContainer">
+			<div class="container" id="">
+				<div class="jumbotron">
+					<h2>Educational Section</h2>
+				
+				<ul style="list-style-type: none">
+
+					<li style="float: left;padding: 0 20px;">
+						<h3>Coding Bootcamp</h3>
+						<h4>UCSD Ext, San Diego CA</h4> 
+						<h4>Javascript Full Stack Web Development</h4>
+						<h4>Apr 2017 - Oct 2017</h4>
+					</li>
+					<li style="float: left;padding: 0 20px;">
+
+						<h3>B.E.</h3>
+						<h4>IP University, India</h4> 
+						<h4>Aug 2002 - Aug 2006</h4>
+					
+					</li>
+					<li style="float: left;padding: 0 20px;">
+						<h3>PGDBM in IT</h3>
+						<h4>Symbiosis, India</h4> 
+						<h4>Jul 2008 - Jul 2012</h4>
+					
+					</li>
+					</ul> 
+				</div>
+
+
+
+			</div>
+		</section>
+
+		<section id="expContainer">
+			<div class="container" id="">
+				<div class="jumbotron">
+					Work Experience
+				</div>
+			</div>
+		</section>
+
+		<section id="skillsContainer">
+			<div class="container" id="">
+				<div class="jumbotron">
+					Professional Skills
+
+					<div>
+						Programming Languages:  Java, J2EE, HTML
+Frameworks:  WCS, Struts 1.2Struts1.2, JSF 1.2, Hibernate 3.0Hibernate3.0, Spring(Core, JDBC), EJB 3.0, JMS
+Web Technologies: JSP, Servlets, Web Services, JavaScript, Junit, JSON, XML, CSS
+Database:  Oracle 11g-9i -8i, MysqlMy SQL, Postgres, SQL Server
+Web/Application Servers:  Apache Tomcat 5.5.16, Jboss 4.2, WeblogicWeb logic 10.3, RAD, WebsphereWeb sphere 6.1
+Version Control:  CVS, VSS, SVN, ClearcaseClear Case, Accurev
+Dev Tools:  Eclipse , Pl/Sql Developer, Toad, UML, Livesite, IBM WCS, JIRA, Maven, Jenkins
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contactContainer">
+			<div class="container" id="">
+				<div class="jumbotron">
+					Get In Touch
+				</div>
+			</div>
+		</section>
+	</div>
+<!-- </div>	 -->
+
+<script type="text/javascript">
+	
+	$(window).scroll(function() {
+	if ($(this).scrollTop() > 1){  
+    $('.stickHeader').addClass("sticky");
+  }
+  else{
+    $('.stickHeader').removeClass("sticky");
+  }
+});
+</script>
 </body>
 </html>
